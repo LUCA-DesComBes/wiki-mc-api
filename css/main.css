@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+	font-family: "Rubik", sans-serif;
+	--primary-color: #3A3A3A;
+	--secondary-color: #fff;
+	--article-sub-bgc: #F5C2CD;
+	--article-sub-border-color: #BC5C70;
+	--secondary-charm-pink-actives: #da6d97;
+	--secondary-Light-San-Juan-Blue: #6c8294;
+}
+
+body {
+	height: 100vh;
+	background: url("../assets/stone.png");
+	width: 100%;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 1.5rem;
+	gap: 8px;
+}
+
+.divHeaderH1 {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	gap: 12px;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 100%;
+	color: #fff;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	border-radius: 999px;
+	background-color: #fff;
+	width: 35%;
+	padding: 8px 11px;
+}
+
+input {
+	border: none;
+	background-color: transparent;
+}
+main {
+	width: 100%;
+}
+.bg-cloud {
+	width: 100%;
+}
