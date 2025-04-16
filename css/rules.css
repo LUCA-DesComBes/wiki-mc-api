@@ -1,0 +1,30 @@
+.art-rules {
+	padding: 26px 30px;
+}
+.para-normal {
+	font-size: 16px;
+	font-weight: 400;
+	padding-bottom: 24px;
+}
+.para-not-glue {
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0;
+}
+span {
+	font-size: 16px;
+	font-weight: 600;
+}
+.a-rules {
+	text-decoration: underline;
+	text-decoration-thickness: 20%;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 496px) {
+	.para-normal,
+	.para-not-glue {
+		width: 90%;
+	}
+}

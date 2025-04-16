@@ -35,20 +35,24 @@
 						internet connections to read through this page.
 					</p>
 				</section>
-				<p class="first-para-sect">
-					An
-					<span class="first-span-sect">Entity</span>
-					is an AI-driven game entity resembling a living creature. Besides its
-					common meaning, the term "mob" is short for "mobile entity".[1] All
-					entities can be attacked and hurt (from falling, attacked by
-					a player or another entity, falling into the void, hit by an arrow,
-					etc), and have some form of voluntary movement.
-				</p>
-				<p class="second-para-sect">
-					Different types of entities often have unique AI and drop good or
-					bad loot depending on the entity that was killed.
-				</p>
-				<img src="../assets/mobs.svg" alt="mobs" />
+				<div class="first-div-sect">
+					<div class="para-div-sect">
+						<p class="first-para-sect">
+							An
+							<span class="first-span-sect">Entity</span>
+							is an AI-driven game entity resembling a living creature. Besides
+							its common meaning, the term "mob" is short for "mobile
+							entity".[1] All entities can be attacked and hurt (from falling,
+							attacked by a player or another entity, falling into the void, hit
+							by an arrow, etc), and have some form of voluntary movement.
+						</p>
+						<p class="second-para-sect">
+							Different types of entities often have unique AI and drop good or
+							bad loot depending on the entity that was killed.
+						</p>
+					</div>
+					<img src="../assets/mobs.svg" alt="mobs" />
+				</div>
 				<section class="list-sect">
 					<h2>List of entities</h2>
 					<hr />
@@ -67,33 +71,74 @@
 					<div class="container">
 						<div class="choose-form">
 							<h3>Classification</h3>
-							<select name="" id="">
+							<select name="" id="select-class">
 								<option value="">Choose</option>
+								<option value="">Arthropod</option>
+								<option value="">Undead</option>
+								<option value="">Animal</option>
+								<option value="">Aquatic</option>
+								<option value="">Monster</option>
 							</select>
 						</div>
 						<div class="choose-form">
 							<h3>Type</h3>
-							<select name="" id="">
+							<select name="" id="select-type">
 								<option value="">Choose</option>
+								<option value="">Passive</option>
+								<option value="">Neutral</option>
+								<option value="">Hostile</option>
 							</select>
 						</div>
 						<div class="choose-form">
 							<h3>Health</h3>
-							<input type="text" name="" id="" placeholder="0" class="input-form">
+							<input
+								type="text"
+								name=""
+								id="health"
+								placeholder="0"
+								class="input-form"
+							/>
 						</div>
 						<div class="choose-form">
 							<h3>Armor</h3>
-							<input type="text" name="" id="" placeholder="0" class="input-form">
+							<input
+								type="text"
+								name=""
+								id="armor"
+								placeholder="0"
+								class="input-form"
+							/>
 						</div>
 						<div class="choose-form">
 							<h3>Damage</h3>
-							<input type="text" name="" id="" placeholder="0" class="input-form">
+							<input
+								type="text"
+								name=""
+								id="damage"
+								placeholder="0"
+								class="input-form"
+							/>
 						</div>
 					</div>
-					<button class="btn-submit">SEARCH</button>
+					<button class="btn-submit" id="btn-submit">SEARCH</button>
 				</form>
-				<hr>
+				<hr class="hr-sect" />
+				<div class="container-divs">
+					<div class="div-info">
+						<div class="name-info">
+							<p class="para-info-name">Cow</p>
+						</div>
+						<img src="../assets/cow.svg" alt="cow" id="mob-img"/>
+						<div class="flex-row-info">
+							<a class="a-info">Animal</a>
+							<p class="info-cate">Passive</p>
+						</div>
+						<hr class="hr-info" />
+						<button class="btn-info">SEE MORE</button>
+					</div>
+				</div>
 			</article>
 		</main>
+		<script src="../main.js"></script>
 	</body>
 </html>
