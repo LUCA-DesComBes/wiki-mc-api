@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/normalize.css" />
 		<title>Document</title>
@@ -66,27 +67,33 @@
 				<form action="">
 					<label class="search-form" for="">
 						<img src="../assets/search.svg" alt="search" />
-						<input type="search" placeholder="Search..." id="inputSearch" />
+						<input
+							type="search"
+							placeholder="Search..."
+							id="inputSearch"
+							value=""
+							class="tqt"
+						/>
 					</label>
 					<div class="container">
 						<div class="choose-form">
 							<h3>Classification</h3>
 							<select name="" id="select-class">
 								<option value="">Choose</option>
-								<option value="">Arthropod</option>
-								<option value="">Undead</option>
-								<option value="">Animal</option>
-								<option value="">Aquatic</option>
-								<option value="">Monster</option>
+								<option value="arthropod">Arthropod</option>
+								<option value="undead">Undead</option>
+								<option value="animals">Animal</option>
+								<option value="aquatic">Aquatic</option>
+								<option value="monster">Monster</option>
 							</select>
 						</div>
 						<div class="choose-form">
 							<h3>Type</h3>
 							<select name="" id="select-type">
 								<option value="">Choose</option>
-								<option value="">Passive</option>
-								<option value="">Neutral</option>
-								<option value="">Hostile</option>
+								<option value="passive">Passive</option>
+								<option value="neutral">Neutral</option>
+								<option value="hostile">Hostile</option>
 							</select>
 						</div>
 						<div class="choose-form">
@@ -120,11 +127,11 @@
 							/>
 						</div>
 					</div>
-					<button class="btn-submit" id="btn-submit">SEARCH</button>
 				</form>
+				<button class="btn-submit" id="btn-submit">SEARCH</button>
 				<hr class="hr-sect" />
 				<div class="container-divs">
-					<div class="div-info">
+					<!-- <div class="div-info">
 						<div class="name-info">
 							<p class="para-info-name">Cow</p>
 						</div>
@@ -135,7 +142,7 @@
 						</div>
 						<hr class="hr-info" />
 						<button class="btn-info">SEE MORE</button>
-					</div>
+					</div> -->
 				</div>
 			</article>
 		</main>
