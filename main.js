@@ -7,6 +7,8 @@ const btnSearch = document.getElementById("btn-submit");
 let containerDivs = document.querySelector(".container-divs");
 const inputSearchs = document.querySelector(".tqt");
 const art = document.querySelector("article");
+let globalData = []
+
 function createElement(tag, attributes = {}, textContent = "") {
 	const element = document.createElement(tag);
 	for (const key in attributes) {
@@ -62,6 +64,10 @@ function createCard(name, classi, type, imgMob) {
 		{ className: "btn-info", id: "toto" },
 		"SEE MORE"
 	);
+
+    btnInfo.addEventListener("click", (e) => {
+        console.log(e.target)
+    })
 	divInfo.appendChild(btnInfo);
 
 	return divInfo;
@@ -82,27 +88,20 @@ function displayAllCards(cards) {
 	}
 }
 async function toto() {
-	const res = await fetch("http://192.168.1.15:3000/v1/entities");
+	const res = await fetch("http://51.38.232.174:3000/v1/entities");
 	const data = await res.json();
-	console.log(data);
-
-	for (let i = 0; i < data.length; i++) {
-		const element = data[i];
-
-		const myCard = createCard(
-			element.name,
-			element.classification,
-			element.type,
-			element.image
-		);
-		containerDivs.appendChild(myCard);
-	}
+    globalData = data;
 }
+toto();
+
+console.log(globalData);
+
+
 
 inputSearchs.addEventListener("input", () => {
 	btnSearch.addEventListener("click", async () => {
 		const res = await fetch(
-			`http://192.168.1.15:3000/v1/entities?name=${inputSearchs.value}`
+			`http://51.38.232.174:3000/v1/entities?name=${inputSearchs.value}`
 		);
 		const data = await res.json();
 		resetDivContainer();
@@ -122,9 +121,131 @@ inputSearchs.addEventListener("input", () => {
 
 btnSearch.addEventListener("click", async () => {
 const optClassi = document.getElementById("select-class");
+const optType = document.getElementById("select-type");
       if (optClassi.value === "arthropod") {
         const res = await fetch(
-            `http://192.168.1.15:3000/v1/entities?classification=arthropod`
+            `http://51.38.232.174:3000/v1/entities?classification=arthropod`
+        );
+        const data = await res.json();
+		resetDivContainer();
+		for (let i = 0; i < data.length; i++) {
+			const element = data[i];
+
+			const myCard = createCard(
+				element.name,
+				element.classification,
+				element.type,
+				element.image
+			);
+			containerDivs.appendChild(myCard);
+		}
+      } else  if (optClassi.value === "undead") {
+        const res = await fetch(
+            `http://51.38.232.174:3000/v1/entities?classification=undead`
+        );
+        const data = await res.json();
+		resetDivContainer();
+		for (let i = 0; i < data.length; i++) {
+			const element = data[i];
+
+			const myCard = createCard(
+				element.name,
+				element.classification,
+				element.type,
+				element.image
+			);
+			containerDivs.appendChild(myCard);
+		}
+      } else  if (optClassi.value === "animal") {
+        const res = await fetch(
+            `http://51.38.232.174:3000/v1/entities?classification=animal`
+        );
+        const data = await res.json();
+		resetDivContainer();
+		for (let i = 0; i < data.length; i++) {
+			const element = data[i];
+
+			const myCard = createCard(
+				element.name,
+				element.classification,
+				element.type,
+				element.image
+			);
+			containerDivs.appendChild(myCard);
+		}
+      } else  if (optClassi.value === "aquatic") {
+        const res = await fetch(
+            `http://51.38.232.174:3000/v1/entities?classification=aquatic`
+        );
+        const data = await res.json();
+		resetDivContainer();
+		for (let i = 0; i < data.length; i++) {
+			const element = data[i];
+
+			const myCard = createCard(
+				element.name,
+				element.classification,
+				element.type,
+				element.image
+			);
+			containerDivs.appendChild(myCard);
+		}
+      } else {
+        const res = await fetch(
+            `http://51.38.232.174:3000/v1/entities?classification=monster`
+        );
+        const data = await res.json();
+		resetDivContainer();
+		for (let i = 0; i < data.length; i++) {
+			const element = data[i];
+
+			const myCard = createCard(
+				element.name,
+				element.classification,
+				element.type,
+				element.image
+			);
+			containerDivs.appendChild(myCard);
+		}
+      }
+
+      if (optType.value === "passive") {
+        const res = await fetch(
+            `http://51.38.232.174:3000/v1/entities?type=passive`
+        );
+        const data = await res.json();
+		resetDivContainer();
+		for (let i = 0; i < data.length; i++) {
+			const element = data[i];
+
+			const myCard = createCard(
+				element.name,
+				element.classification,
+				element.type,
+				element.image
+			);
+			containerDivs.appendChild(myCard);
+		}
+      } else if (optType.value === "neutral") {
+        const res = await fetch(
+            `http://51.38.232.174:3000/v1/entities?type=neutral`
+        );
+        const data = await res.json();
+		resetDivContainer();
+		for (let i = 0; i < data.length; i++) {
+			const element = data[i];
+
+			const myCard = createCard(
+				element.name,
+				element.classification,
+				element.type,
+				element.image
+			);
+			containerDivs.appendChild(myCard);
+		}
+      } else {
+        const res = await fetch(
+            `http://51.38.232.174:3000/v1/entities?type=hostile`
         );
         const data = await res.json();
 		resetDivContainer();
