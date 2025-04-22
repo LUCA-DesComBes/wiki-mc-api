@@ -1,118 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/renseignements.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/menuBurger.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/renseignements.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/menuBurger.css" />
 
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <img src="../assets/croix.svg" alt="croix">
-        <div class="divNav">
-            <div class="divNavMenuBurger">
-                <img src="../assets/explore.svg" alt="explore">
-                <a class="lienPage" href="./index.html">EXPLORE</a>
-            </div>
-            <div class="divNavMenuBurger">
-                <img src="../assets/arena.svg" alt="arena">
-                <a class="lienPage" href="./arena.html">ARENA</a>
-            </div>
-            <div class="divNavMenuBurger">
-                <img src="../assets/rules.svg" alt="rules">
-                <a class="lienPage" href="./rules.html">RULES</a>
-            </div>
+      <img src="../assets/croix.svg" alt="croix" />
+      <div class="divNav">
+        <div class="divNavMenuBurger">
+          <img src="../assets/explore.svg" alt="explore" />
+          <a class="lienPage" href="./index.html">EXPLORE</a>
         </div>
+        <div class="divNavMenuBurger">
+          <img src="../assets/arena.svg" alt="arena" />
+          <a class="lienPage" href="./arena.html">ARENA</a>
+        </div>
+        <div class="divNavMenuBurger">
+          <img src="../assets/rules.svg" alt="rules" />
+          <a class="lienPage" href="./rules.html">RULES</a>
+        </div>
+      </div>
     </nav>
     <header>
-            <div class="divHeaderH1">
-                <img src="../assets/logo.svg" alt="logo">
-                <h1>Minecraft wiki</h1>
-            </div>
-            <label class="labelHeader" for="">
-                <img src="../assets/search.svg" alt="search">
-                <input type="search" placeholder="Search..." id="inputSearch">
-            </label>
-            <img class="imgMenuBurger" src="../assets/menuBurger.svg" alt="menu burger">
+      <div class="divHeaderH1">
+        <img src="../assets/logo.svg" alt="logo" />
+        <h1>Minecraft wiki</h1>
+      </div>
+      <label class="labelHeader" for="">
+        <img src="../assets/search.svg" alt="search" />
+        <input type="search" placeholder="Search..." id="inputSearch" />
+      </label>
+      <img
+        class="imgMenuBurger"
+        src="../assets/menuBurger.svg"
+        alt="menu burger"
+      />
     </header>
     <main>
-        <div class="bg-cloud"></div>
-        <div class="bg-dirt"></div>
-        <section class="firstSection">
-            <p>in: <a href="#">Minecraft Entities</a>,<a href="#"> Animal mobs</a></p>
-            <h2>Armadillo</h2>
-            <div class="divSub">
-                <img src="../assets/stub.svg" alt="stub" />
-                <div class="divP">
-                    <p>This article is a <span class="spanStub">stub</span>.</p>
-                    <p class="pHelp">You can help by expanding it</p>
-                </div>
-            </div>
+      <div class="bg-cloud"></div>
+      <div class="bg-dirt"></div>
+      <section class="firstSection">
+        <p>
+          in: <a href="#">Minecraft Entities</a>,<a href="#"> <span class="typeMobA" id="typeMobA">Animal</span> mobs</a>
+        </p>
+        <h2 id="name-mod-h2">Armadillo</h2>
+        <div class="divSub">
+          <img src="../assets/stub.svg" alt="stub" />
+          <div class="divP">
+            <p>This article is a <span class="spanStub">stub</span>.</p>
+            <p class="pHelp">You can help by expanding it</p>
+          </div>
+        </div>
         <section class="lastSecInfo">
-            <div class="divPdesc">
-                <p><span class="spanNom">Armadillo</span> is a mob that spawns in warm biomes. Spider eyes, brushes, and lead can be used on the armadillo to breed, brush, or lead it respectively.</p>
-                <p>When a player is sprinting, mounting, or causes harm to an armadillo, or when an undead hostile mob is nearby, it rolls up into a cube-like shape to protect itself from harm.</p>
+          <div class="divPdesc">
+            <p id="descMob">
+              <span class="spanNom" id="spanNom">Armadillo</span> is a mob that
+              spawns in warm biomes. Spider eyes, brushes, and lead can be used
+              on the armadillo to breed, brush, or lead it respectively.
+            </p>
+          </div>
+          <div class="divInfoEntity">
+            <div class="divNom">
+              <img src="" alt="iconMob" id="iconMob"/>
+              <p class="pInfoEntity" id="mob-name">Armadillo</p>
             </div>
-            <div class="divInfoEntity">
-                <div class="divNom">
-                    <img src="" alt="">
-                    <p class="pInfoEntity">Armadillo</p>
+            <img src="" alt="imageMob" id="mob-image" />
+            <div class="divInfoTotal">
+              <div class="divInfo">
+                <span class="spanHealth">Health</span>
+                <div class="divChepa">
+                  <p id="paraHealth">6</p>
+                  <img src="../assets/coeur.svg" alt="coeur" />
                 </div>
-                <img src="" alt="">
-                <div class="divInfoTotal">
-                    <div class="divInfo">
-                        <span class="spanHealth">Health</span>
-                        <div class="divChepa">
-                            <p>6</p>
-                            <img src="../assets/coeur.svg" alt="coeur">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="divInfo">
-                    <span>Armor</span>
-                    <div class="divChepa">
-                        <p>0</p>
-                        <img src="../assets/armor.svg" alt="armure">
-                    </div>
-                    </div>
-                    <hr>
-                    <div class="divInfo">
-                    <span>Damage</span>
-                    <div class="divChepa">
-                        <p>0</p>
-                        <img src="../assets/coeur.svg" alt="coeur">
-                    </div>
-                    </div>
-                    <hr>
-                    <div class="divInfo">
-                        <span>Classification</span>
-                        <a href="#">Animal</a>
-                    </div>
-                        <hr>
-                        <div class="divInfo">
-                            <span>Behavior</span>
-                            <p>Passive</p>
-                        </div>
-                    <hr>
-                    <button id="details">DETAILS</button>
-                    <div class="divInfo">
-                        <span>Size</span>
-                        <div class="divSize">
-                            <p>Height: 0.65 blocks</p>
-                            <p>Width: 0.7 blocks</p>
-                        </div>
-                    </div>
+              </div>
+              <hr />
+              <div class="divInfo">
+                <span>Armor</span>
+                <div class="divChepa">
+                  <p id="paraArmor">0</p>
+                  <img src="../assets/armure.svg" alt="armure" />
                 </div>
+              </div>
+              <hr />
+              <div class="divInfo">
+                <span>Damage</span>
+                <div class="divChepa">
+                  <p id="paraDamage">0</p>
+                  <img src="../assets/coeur.svg" alt="coeur" />
+                </div>
+              </div>
+              <hr />
+              <div class="divInfo">
+                <span>Classification</span>
+                <a href="#" id="mob-classi">Animal</a>
+              </div>
+              <hr />
+              <div class="divInfo">
+                <span>Behavior</span>
+                <p id="mob-type">Passive</p>
+              </div>
+              <hr />
+              <button id="details">DETAILS</button>
+              <div class="divInfo">
+                <span>Size</span>
+                <div class="divSize">
+                  <p>Height: <span id="spanHeight"></span> blocks</p>
+                  <p>Width: <span id="spanWidth"></span> blocks</p>
+                </div>
+              </div>
             </div>
+          </div>
         </section>
-    </section>
+      </section>
     </main>
+    <script src="../renseigenements.js"></script>
     <script src="../menuBurger.js"></script>
     <!-- <script src="../js/renseignements.js"></script> -->
-</body>
+  </body>
 </html>
