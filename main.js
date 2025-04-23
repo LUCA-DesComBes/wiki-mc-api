@@ -85,22 +85,6 @@ function createCard(name, classi, type, imgMob, dataId) {
 
   return divInfo;
 }
-
-function displayAllCards(cards) {
-  for (let i = 0; i < cards.length; i++) {
-    const element = cards[i];
-
-    const cardElement = createCard(
-      element.name,
-      element.classification,
-      element.type,
-      element.image,
-      element.id
-    );
-
-    containerDivs.appendChild(cardElement);
-  }
-}
 async function toto() {
   containerDivs.style.display = "grid";
   containerNoEntity.style.display = "none";

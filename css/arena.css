@@ -1,0 +1,254 @@
+section {
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e6eff4;
+  border-radius: 4px;
+  padding: 1.6rem 1.8rem;
+  gap: 1.5rem;
+  width: 88%;
+}
+
+.divH2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.open {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: #4f8c69;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3a3a3a;
+}
+
+.spanArena {
+  font-weight: 600;
+}
+
+.btnSubmit {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 0;
+  width: 40%;
+  background-color: #4f8c69;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.form-arena {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.f-r-form-arena {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.div-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 25%;
+  margin: 14px 11px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #3a3a3a;
+}
+.select-arena {
+  border: none;
+  padding: 5px 0;
+  border-radius: 4px;
+}
+.input-form-arena {
+  background-color: #fff;
+  padding: 8px 0 8px 8px;
+  border-radius: 4px;
+}
+.labelForm {
+  display: flex;
+  flex-direction: column;
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #3a3a3a;
+  gap: 8px;
+}
+
+input::placeholder {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  color: #dbdbdb;
+}
+
+.entitiesH2,
+.mapH2 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  color: #3a3a3a;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+}
+
+thead {
+  background-color: #d9d9d9;
+}
+
+th {
+  border-bottom: 1px solid rgb(160 160 160);
+  padding: 14px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #3a3a3a;
+}
+
+hr {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+td {
+  text-align: center;
+  border-bottom: 1px solid rgb(160 160 160);
+  padding: 8px 3px;
+}
+
+.btnDelete {
+  background-color: #f25959;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: white;
+}
+.tr-truc th:nth-child(1)::after {
+  content: "Ent..";
+}
+
+.tr-truc th:nth-child(2)::after {
+  content: "Na..";
+}
+
+.tr-truc th:nth-child(3)::after {
+  content: "X";
+}
+
+.tr-truc th:nth-child(4)::after {
+  content: "Z";
+}
+
+.tr-truc th:nth-child(5)::after {
+  content: "Stre..";
+}
+
+.tr-truc th:nth-child(6)::after {
+  content: "del";
+}
+
+.btn-div-submit {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+
+@media screen and (min-width: 850px) {
+  .div-form {
+    width: 100%;
+  }
+  .select-arena {
+    width: 100%;
+  }
+  .input-form-arena {
+    width: 100%;
+  }
+  .tr-truc th:nth-child(1)::after {
+    content: "Entity";
+  }
+
+  .tr-truc th:nth-child(2)::after {
+    content: "Name";
+  }
+
+  .tr-truc th:nth-child(3)::after {
+    content: "X Coordinates";
+  }
+
+  .tr-truc th:nth-child(4)::after {
+    content: "Z Coordinates";
+  }
+
+  .tr-truc th:nth-child(5)::after {
+    content: "Strength";
+  }
+
+  .tr-truc th:nth-child(6)::after {
+    content: "del";
+  }
+  .btnSubmit {
+    width: 30%;
+  }
+  section {
+    width: 80%;
+    left: 10%;
+  }
+
+  form {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .labelForm {
+    width: 50%;
+  }
+
+  select {
+    width: 80%;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+  }
+
+  td {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .btnSubmit {
+    width: 15%;
+  }
+}

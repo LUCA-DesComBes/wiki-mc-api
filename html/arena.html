@@ -1,35 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/arena.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/arena.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/menuBurger.css" />
+
     <title>wiki</title>
-</head>
-<body>
-    <header>
-        <div class="divHeaderH1">
-            <img src="../assets/logo.svg" alt="logo">
-            <h1>Minecraft wiki</h1>
+  </head>
+  <body>
+    <nav>
+      <img src="../assets/croix.svg" alt="croix" />
+      <div class="divNav">
+        <div class="divNavMenuBurger">
+          <img src="../assets/explore.svg" alt="explore" />
+          <a class="lienPage" href="./index.html">EXPLORE</a>
         </div>
-        <label for="">
-            <img src="../assets/search.svg" alt="search">
-            <input type="search" placeholder="Search..." id="inputSearch">
-        </label>
-        <img src="../assets/menuBurger.svg" alt="menu burger">
+        <div class="divNavMenuBurger">
+          <img src="../assets/arena.svg" alt="arena" />
+          <a class="lienPage" href="./arena.html">ARENA</a>
+        </div>
+        <div class="divNavMenuBurger">
+          <img src="../assets/rules.svg" alt="rules" />
+          <a class="lienPage" href="./rules.html">RULES</a>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="divHeaderH1">
+        <img src="../assets/logo.svg" alt="logo" />
+        <h1 class="titleHeader">Minecraft wiki</h1>
+      </div>
+      <label class="labelHeader" for="">
+        <img src="../assets/search.svg" alt="search" />
+        <input type="search" placeholder="Search..." id="inputSearch" />
+      </label>
+      <img
+        class="imgMenuBurger"
+        src="../assets/menuBurger.svg"
+        alt="menu burger"
+      />
     </header>
     <main>
-        <div>
-            <h1>Arena</h1>
-            <p>OPEN</p>
+      <div class="bg-cloud"></div>
+      <div class="bg-dirt"></div>
+      <section>
+        <div class="divH2">
+          <h2>Arena</h2>
+          <p class="open">OPEN</p>
         </div>
-        <p>Choose an entity to spawn inside the <span>Arena.</span></p>
-        <form>
-            <label for=""></label>
+        <p>
+          Choose an entity to spawn inside the
+          <span class="spanArena">Arena.</span>
+        </p>
+        <form class="form-arena">
+          <div class="f-r-form-arena">
+            <div class="div-form">
+              <h3>Entity</h3>
+              <select class="select-arena">
+                <option value="">Choose</option>
+              </select>
+            </div>
+            <div class="div-form">
+              <h3>X Coordinate</h3>
+              <input type="number" placeholder="255.2"  class="input-form-arena"/>
+            </div>
+            <div class="div-form">
+              <h3>Z Coordinate</h3>
+              <input type="number" placeholder="126.7"  class="input-form-arena"/>
+            </div>
+          </div>
+          <div class="btn-div-submit">
+          <button id="btnSubmit" class="btnSubmit">SPAWN</button>
+        </div>
         </form>
+        <h2 class="entitiesH2">Arena entities</h2>
+        <hr />
+        <p>
+          This list describe all entities registered inside the
+          <span class="spanArena">Arena.</span>
+        </p>
+        <table>
+          <thead>
+            <tr class="tr-truc">
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><img src="../assets/icon-arma.svg" alt="icon-arma" /></th>
+              <td>Armadillo</td>
+              <td>155.6</td>
+              <td>245.2</td>
+              <td>0</td>
+              <td><button class="btnDelete">DELETE</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="mapH2">Arena map</h2>
+        <hr />
+      </section>
     </main>
-</body>
+    <script src="../arena.js"></script>
+    <script src="../menuBurger.js"></script>
+  </body>
 </html>

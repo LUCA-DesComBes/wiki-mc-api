@@ -31,6 +31,7 @@ window.addEventListener("DOMContentLoaded", () => {
     descMob.innerHTML = `<p>${data.description}</p>`;
     paraHealth.textContent = data.health;
     paraArmor.textContent = data.armor;
+    paraDamage.textContent = data.strength;
     spanHeight.textContent = data.height;
     spanWidth.textContent = data.width;
     iconMob.src = data.icon;
